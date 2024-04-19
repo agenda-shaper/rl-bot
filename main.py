@@ -8,10 +8,11 @@ arena = rs.Arena(rs.GameMode.SOCCAR)
 # Make a new car
 car = arena.add_car(rs.Team.BLUE)
 
+arena.reset_to_random_kickoff()
+
 # Set up an initial state for our car
 car.set_state(rs.CarState(pos=rs.Vec(z=17), vel=rs.Vec(x=50)))
 
-car.set
 
 # Setup a ball state
 arena.ball.set_state(rs.BallState(pos=rs.Vec(y=400, z=100)))
