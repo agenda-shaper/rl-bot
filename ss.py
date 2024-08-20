@@ -36,7 +36,7 @@ def build_rocketsim_env():
     )
     from rlgym_sim.utils.obs_builders import DefaultObs
     from rlgym_sim.utils.terminal_conditions.common_conditions import (
-        NoTouchTimeoutCondition,
+        TimeoutCondition,
         GoalScoredCondition,
     )
     from rlgym_sim.utils import common_values
@@ -45,15 +45,17 @@ def build_rocketsim_env():
     spawn_opponents = True
     team_size = 1
     game_tick_rate = 120
-    tick_skip = 8
+    tick_skip = 1
     timeout_seconds = 10
-    timeout_ticks = int(round(timeout_seconds * game_tick_rate / tick_skip))
+    timeout_ticks = int(
+        round(timeout_seconds * game_tick_rate / tick_skip)
+    )  # 1200 ticks reset game
 
-    action_parser = ContinuousAction()
     terminal_conditions = [
-        NoTouchTimeoutCondition(timeout_ticks),
+        TimeoutCondition(timeout_ticks),
         GoalScoredCondition(),
     ]
+    action_parser = ContinuousAction()
 
     rewards_to_combine = (
         VelocityPlayerToBallReward(),
@@ -97,7 +99,7 @@ if __name__ == "__main__":
 
     metrics_logger = ExampleLogger()
 
-    # 32 processes
+    # 1 processes
     n_proc = 32
 
     # educated guess - could be slightly higher or lower
