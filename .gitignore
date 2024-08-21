@@ -2,4 +2,4 @@ RocketSimVis-main
 wandb
 .vscode
 __pycache__
-data
+# data
