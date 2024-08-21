@@ -1,0 +1,84 @@
+rewards for 50s kickoff bot
+
+the more time touching the ball during 50/50 - the better ? idk yet
+
+also predict ball somehow and reset state before score so we dont waste time. like if its on target and 100% score insta reset
+
+the bot excels in crazy reaction and precision
+so our goal is to maximize potential human error. if somehow manage to turn kickoff to multiple 50/50s thats better
+
+now we either score open net on kickoff and end fully.
+
+or we demo the guy which pretty much 95% of scoring 
+
+
+or we win boost and are in much much better position and have the guy in bad position.
+
+these the only outcomes.
+
+now we will also fight for not just big boost but also the small one and other small ones.
+
+so if we dont insta score - then go for big boost, try to go for the same boost as the opponent. so that we could win it
+
+also try demo or bump hard
+for that we prefer supersonic asap
+
+super huge reward for demo
+
+also for bump reward based on how far and how high bumped
+
+and ofc opposite of that anti rewards for opponent
+
+i feel like the more delay second jump the better
+
+and if second jump dont pretty much win 50/50 hard we prefer wavedash with it
+
+and jsut overall not just bump but if fly away high and far we want that
+
+ofc reward for possesion but we should pretty much reset if non open net
+
+now in boost we go toward the one where ball bounce i guess
+
+
+
+
+
+
+so for the start just make bot go toward the ball asap, touch it
+
+a bunch of noob rewards built in
+
+train this method until we have decent noob kickoff
+
+the faster the touch the better
+
+
+then craft a insane 50/50 reward calc
+
+50/50 reward - how close to the ball as well as velocities taken into account, zero sum ofc. how well facing the ball
+also how fast you land ( so wavedash will be good)
+also reward wavedash
+also wavedash how much accel gives also reward
+negative reward on how youre aligned on defense . if opponent posession neg reward if youre not covering
+
+
+so theres goal,
+theres possesion with boost and opponent no boost
+and just possesion ( opponent access boost so do you) 
+then posession no boost opponent has boost or posession but you in shitty position in your side and opponent good positon
+
+
+so we just do speedflip - goal to acel to supersonic asap, then we go 50/50 the ball
+
+huge reward for that unless open net if no 50/50
+
+then if still no open net we battle for boosts.
+and eventually big boost
+
+also super hard on bumps and demos
+
+at early stages big reward for just going for ball shooting it bruteforce
+
+also if can shoot then shoot because if opponent needs to save you auto win boost
+
+at start use tick skip
